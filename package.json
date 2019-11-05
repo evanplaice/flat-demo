@@ -1,0 +1,17 @@
+{
+  "name": "flat-demo",
+  "version": "1.0.0",
+  "description": "git push -u origin master",
+  "license": "MIT",
+  "repository": "http://github.com/evanplaice/flat-demo/",
+  "main": "index.js",
+  "author": {
+    "name": "Evan Plaice",
+    "email": "evanplaice@gmail.com",
+    "url": "http://evanplaice.com"
+  },
+  "scripts": {
+    "test": "npx tape ./src/*.spec.js | tap-spec"
+  }
+
+}
