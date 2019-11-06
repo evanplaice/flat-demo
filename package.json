@@ -13,6 +13,7 @@
   "scripts": {
     "test": "npx tape ./src/*.spec.js | tap-spec",
     "lint": "npx semistandard",
+    "types": "npx tsc -p .config/jsconfig.json",
     "build:docs": "node .config/docs.config.js"
   },
   "devDependencies": {
