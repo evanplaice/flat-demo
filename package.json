@@ -12,6 +12,7 @@
   },
   "scripts": {
     "test": "npx tape ./src/*.spec.js | tap-spec",
+    "test:watch": "npx chokidar-cli -i 'node_modules' 'src/*.spec.js' -c 'node {path}'",
     "lint": "npx semistandard",
     "types": "npx tsc -p .config/jsconfig.json",
     "build:docs": "node .config/docs.config.js",
