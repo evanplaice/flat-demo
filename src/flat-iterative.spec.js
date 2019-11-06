@@ -1,5 +1,5 @@
 const test = require('tape');
-const flat = require('../index.js').flatIterative;
+const flat = require('./flat-iterative.js');
 
 test('flat(array) - should return an empty array if the input is empty', t => {
   const expect = [];
