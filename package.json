@@ -14,7 +14,9 @@
     "test": "npx tape ./src/*.spec.js | tap-spec",
     "lint": "npx semistandard",
     "types": "npx tsc -p .config/jsconfig.json",
-    "build:docs": "node .config/docs.config.js"
+    "build:docs": "node .config/docs.config.js",
+    "build:typings": "npx tsc -p .config/tsconfig.json"
+
   },
   "devDependencies": {
     "docdown": "github:evanplaice/docdown",
