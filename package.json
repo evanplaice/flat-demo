@@ -18,7 +18,8 @@
     "build": "npm run build:docs && npm run build:typings",
     "build:docs": "node .config/docs.config.js",
     "build:typings": "npx tsc -p .config/tsconfig.json",
-    "preversion": "npm test && npm run lint && npm run types"
+    "preversion": "npm test && npm run lint && npm run types",
+    "postversion": "git push --follow-tags"
   },
   "devDependencies": {
     "docdown": "github:evanplaice/docdown",
