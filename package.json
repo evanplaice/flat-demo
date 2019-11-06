@@ -12,9 +12,12 @@
   },
   "scripts": {
     "test": "npx tape ./src/*.spec.js | tap-spec",
-    "lint": "npx semistandard"
+    "lint": "npx semistandard",
+    "build:docs": "node .config/docs.config.js"
   },
   "devDependencies": {
+    "docdown": "github:evanplaice/docdown",
+    "glob": "^7.1.5",
     "semistandard": "^14.2.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
