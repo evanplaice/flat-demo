@@ -11,7 +11,7 @@
     "url": "http://evanplaice.com"
   },
   "scripts": {
-    "test": "npx tape ./src/*.spec.js | tap-spec",
+    "test": "npx tape ./src/*.spec.js",
     "test:watch": "npx chokidar-cli -i 'node_modules' 'src/*.spec.js' -c 'node {path}'",
     "lint": "npx semistandard",
     "types": "npx tsc -p .config/jsconfig.json",
@@ -24,9 +24,8 @@
   },
   "devDependencies": {
     "docdown": "github:evanplaice/docdown",
-    "glob": "^7.1.5",
-    "semistandard": "^14.2.0",
-    "tap-spec": "^5.0.0",
-    "tape": "^4.13.2"
+    "glob": "^7.1.7",
+    "semistandard": "^14.2.3",
+    "tape": "^4.13.3"
   }
 }
